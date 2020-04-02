@@ -44,12 +44,12 @@ RUN cd /tmp/ && \
 # Compile ffmpeg.
 RUN cd /tmp/ffmpeg-${FFMPEG_VERSION} && \
   ./configure \
-  --enable-openssl
-  --enable-gpl \
   --enable-version3 \
+  --enable-gpl \
   --enable-nonfree \
   --enable-small \
   --enable-libmp3lame \
+  --enable-openssl
   --enable-libx264 \
   --enable-libx265 \
   --enable-libvpx \
@@ -120,5 +120,4 @@ RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/yout
    chmod a+rx /usr/local/bin/youtube-dl && \
    youtube-dl --version && \
    ffmpeg -version
-CMD pwd
 CMD /app/media-roller
