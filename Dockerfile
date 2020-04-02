@@ -15,6 +15,7 @@ RUN apk add --update \
   freetype-dev \
   gcc \
   lame-dev \
+  lib-openssl-dev \
   libogg-dev \
   libass \
   libass-dev \
@@ -43,6 +44,7 @@ RUN cd /tmp/ && \
 # Compile ffmpeg.
 RUN cd /tmp/ffmpeg-${FFMPEG_VERSION} && \
   ./configure \
+  --enable-openssl
   --enable-version3 \
   --enable-gpl \
   --enable-nonfree \
