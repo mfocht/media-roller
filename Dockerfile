@@ -15,7 +15,7 @@ RUN apk add --update \
   freetype-dev \
   gcc \
   lame-dev \
-  lib-openssl-dev \
+  openssl-dev \
   libogg-dev \
   libass \
   libass-dev \
