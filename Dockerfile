@@ -49,7 +49,7 @@ RUN cd /tmp/ffmpeg-${FFMPEG_VERSION} && \
   --enable-nonfree \
   --enable-small \
   --enable-libmp3lame \
-  --enable-openssl
+  --enable-openssl \
   --enable-libx264 \
   --enable-libx265 \
   --enable-libvpx \
