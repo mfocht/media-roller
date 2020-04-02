@@ -120,5 +120,5 @@ RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/yout
    chmod a+rx /usr/local/bin/youtube-dl && \
    youtube-dl --version && \
    ffmpeg -version
-
+CMD pwd
 CMD /app/media-roller
